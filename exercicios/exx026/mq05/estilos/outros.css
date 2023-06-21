@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+@media screen and (min-width:768px){
+    body{
+        background-image: linear-gradient(to top, #5579A7, #55ffff);
+    }
+    menu{
+        display: block;
+    }
+
+    menu > ul > li{
+        display: inline-block;
+    }
+
+    menu > ul > li > a{
+        display: inline-block;
+        padding: 10px;
+    }
+    span#burguer{
+        display: none;
+    }
+    main{
+        width: 660px;
+    }
+}

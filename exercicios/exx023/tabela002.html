@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        table{
+            width: 550px;
+            border: 1px solid black;
+            border-collapse: collapse;
+            position: relative;
+        }
+        th, td{border: 1px solid black;
+        padding: 8px;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray
+            
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: lightgrey;
+        }
+
+        tfoot{background-color: gray;
+        color: white;
+    }
+
+        th{background-color: gray;
+        color: white;
+    }
+
+    .num{
+        text-align: right;
+    }
+
+    .porc{
+        text-align: center;
+    }
+
+    caption{
+        padding: 8px;
+        border: 1px solid black;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        font-size: 1.5em;
+        background-color: lightgrey;
+    }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>População das Unidades Federativas BR</caption>
+        <thead>
+            <tr>
+                <th scope="col">Unidade Federativa</th>
+                <th scope="col">População</th>
+                <th scope="col">Mudança</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">46 024 937</td>
+                <td class="porc">+11.5%</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 732 660</td>
+                <td class="porc">+5.8%</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 615 526</td>
+                <td class="porc">+3.9%</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 659 023</td>
+                <td class="porc">+4.6%</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 835 379</td>
+                <td class="porc">+13.3%</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 088 065</td>
+                <td class="porc">+3.7%	</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 051 113</td>
+                <td class="porc">+2.9%</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8 936 431</td>
+                <td class="porc">+5.7%</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 442 962</td>
+                <td class="porc">+11.4%</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7 762 154</td>
+                <td class="porc">+24.2%</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">6 950 976</td>
+                <td class="porc">+15.8%</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">6 800 605</td>
+                <td class="porc">+3.4%</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">4 108 508</td>
+                <td class="porc">+13.1%</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">4 030 961</td>
+                <td class="porc">+7.0%</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">3 952 262</td>
+                <td class="porc">+13.4%</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3 784 239</td>
+                <td class="porc">+24.7%</td>
+            </tr>
+            <tr>
+                <td> Rio Grande do Norte</td>
+                <td class="num">3 303 953</td>
+                <td class="porc">+4.3%</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3 270 174</td>
+                <td class="porc">+4.9%</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3 125 254</td>
+                <td class="porc">+0.2%</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">2 923 369</td>
+                <td class="porc">+13.7%</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso Do Sul</td>
+                <td class="num">2 833 742</td>
+                <td class="porc">+15.7%</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">2 211 868</td>
+                <td class="porc">+7.0%</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">1 616 379</td>
+                <td class="porc">+3.5%</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">1 584 306</td>
+                <td class="porc">+14.5%</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">829 780</td>
+                <td class="porc">+13.1%</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="num">774 268</td>
+                <td class="porc">+15.6%</td>
+            </tr>
+            <tr>
+                <td> Roraima</td>
+                <td class="num">634 805</td>
+                <td class="porc">+40.9%</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Pessoas e % de aumento</th>
+                <td class="num">207 883 699</td>
+                <td class="porc">+297.8%</td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et cum, sint aut nisi molestias libero magnam deserunt suscipit accusamus labore perferendis, est quibusdam sapiente commodi tempora fugiat quas veniam quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aut dolorem enim accusamus! Optio quisquam non porro harum suscipit laboriosam! Et libero distinctio nostrum ullam officiis nihil quas sunt mollitia! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas esse ad facilis, voluptate ducimus quis voluptatum, cumque ipsa, aliquid quia inventore assumenda. Quisquam esse rem mollitia minima quis natus harum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, distinctio omnis provident officia earum, ipsum excepturi itaque ut quis et voluptates temporibus deleniti fugiat eveniet, modi tempore sunt mollitia soluta!</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et cum, sint aut nisi molestias libero magnam deserunt suscipit accusamus labore perferendis, est quibusdam sapiente commodi tempora fugiat quas veniam quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aut dolorem enim accusamus! Optio quisquam non porro harum suscipit laboriosam! Et libero distinctio nostrum ullam officiis nihil quas sunt mollitia! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas esse ad facilis, voluptate ducimus quis voluptatum, cumque ipsa, aliquid quia inventore assumenda. Quisquam esse rem mollitia minima quis natus harum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, distinctio omnis provident officia earum, ipsum excepturi itaque ut quis et voluptates temporibus deleniti fugiat eveniet, modi tempore sunt mollitia soluta!</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et cum, sint aut nisi molestias libero magnam deserunt suscipit accusamus labore perferendis, est quibusdam sapiente commodi tempora fugiat quas veniam quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aut dolorem enim accusamus! Optio quisquam non porro harum suscipit laboriosam! Et libero distinctio nostrum ullam officiis nihil quas sunt mollitia! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas esse ad facilis, voluptate ducimus quis voluptatum, cumque ipsa, aliquid quia inventore assumenda. Quisquam esse rem mollitia minima quis natus harum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, distinctio omnis provident officia earum, ipsum excepturi itaque ut quis et voluptates temporibus deleniti fugiat eveniet, modi tempore sunt mollitia soluta!</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et cum, sint aut nisi molestias libero magnam deserunt suscipit accusamus labore perferendis, est quibusdam sapiente commodi tempora fugiat quas veniam quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aut dolorem enim accusamus! Optio quisquam non porro harum suscipit laboriosam! Et libero distinctio nostrum ullam officiis nihil quas sunt mollitia! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas esse ad facilis, voluptate ducimus quis voluptatum, cumque ipsa, aliquid quia inventore assumenda. Quisquam esse rem mollitia minima quis natus harum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, distinctio omnis provident officia earum, ipsum excepturi itaque ut quis et voluptates temporibus deleniti fugiat eveniet, modi tempore sunt mollitia soluta!</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et cum, sint aut nisi molestias libero magnam deserunt suscipit accusamus labore perferendis, est quibusdam sapiente commodi tempora fugiat quas veniam quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aut dolorem enim accusamus! Optio quisquam non porro harum suscipit laboriosam! Et libero distinctio nostrum ullam officiis nihil quas sunt mollitia! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas esse ad facilis, voluptate ducimus quis voluptatum, cumque ipsa, aliquid quia inventore assumenda. Quisquam esse rem mollitia minima quis natus harum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, distinctio omnis provident officia earum, ipsum excepturi itaque ut quis et voluptates temporibus deleniti fugiat eveniet, modi tempore sunt mollitia soluta!</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et cum, sint aut nisi molestias libero magnam deserunt suscipit accusamus labore perferendis, est quibusdam sapiente commodi tempora fugiat quas veniam quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aut dolorem enim accusamus! Optio quisquam non porro harum suscipit laboriosam! Et libero distinctio nostrum ullam officiis nihil quas sunt mollitia! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas esse ad facilis, voluptate ducimus quis voluptatum, cumque ipsa, aliquid quia inventore assumenda. Quisquam esse rem mollitia minima quis natus harum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, distinctio omnis provident officia earum, ipsum excepturi itaque ut quis et voluptates temporibus deleniti fugiat eveniet, modi tempore sunt mollitia soluta!</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et cum, sint aut nisi molestias libero magnam deserunt suscipit accusamus labore perferendis, est quibusdam sapiente commodi tempora fugiat quas veniam quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aut dolorem enim accusamus! Optio quisquam non porro harum suscipit laboriosam! Et libero distinctio nostrum ullam officiis nihil quas sunt mollitia! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas esse ad facilis, voluptate ducimus quis voluptatum, cumque ipsa, aliquid quia inventore assumenda. Quisquam esse rem mollitia minima quis natus harum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, distinctio omnis provident officia earum, ipsum excepturi itaque ut quis et voluptates temporibus deleniti fugiat eveniet, modi tempore sunt mollitia soluta!</p>
+</body>
+</html>
